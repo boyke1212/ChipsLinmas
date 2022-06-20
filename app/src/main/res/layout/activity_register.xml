@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_pendaftaran"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.toelve.chipslinmas.Register">
+<com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/toolbarHolder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/toolbar2" />
+</com.google.android.material.appbar.AppBarLayout>
+
+<TextView
+    android:textColor="#fff"
+    android:id="@+id/tvHead"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center"
+    android:text="Isi Data Anda dengan sebenarmya"
+    android:layout_below="@+id/toolbarHolder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<TextView
+    android:layout_marginStart="5dp"
+    android:textSize="20sp"
+    android:layout_marginTop="15dp"
+    android:textColor="#000"
+    android:layout_below="@+id/tvHead"
+    android:id="@+id/tvMohon"
+    android:text="Mohon Isi Dengan Lengkap"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="serif"
+    android:textStyle="normal|italic"
+    android:textAllCaps="false"
+    android:layout_marginLeft="5dp" />
+<ScrollView
+    android:id="@+id/scrollView"
+    android:layout_below="@+id/tvMohon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/mainHolder"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/namaJudul"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:text="Nama Lengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_margin="5dp"
+            android:background="@drawable/button2"
+            android:id="@+id/etNama"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/tvUsername"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:text="Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_margin="5dp"
+            android:background="@drawable/button2"
+            android:id="@+id/etUsername"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/tvPassword"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:text="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_margin="5dp"
+            android:background="@drawable/button2"
+            android:id="@+id/etPassword"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/kelaminJudul"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:text="Jenis Kelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_margin="5dp"
+            android:background="@drawable/button2"
+            android:id="@+id/etKelamin"
+            android:hint="Laki/Perempuan"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/tempatlahirJudul"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:text="Tempat Lahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_margin="5dp"
+            android:background="@drawable/button2"
+            android:id="@+id/etTempatLahir"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/tanggallahirJudul"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:text="Tanggal Lahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etTanggalLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/button2"
+            android:inputType="text" />
+
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/ktpJudul"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:text="Nomer Ktp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_margin="5dp"
+            android:background="@drawable/button2"
+            android:id="@+id/etKtp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/tvNomerHp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:text="Nomer Hp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_margin="5dp"
+            android:background="@drawable/button2"
+            android:id="@+id/etNomerHp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/tvEmail"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:text="Email :"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_margin="5dp"
+            android:background="@drawable/button2"
+            android:id="@+id/etEmail"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/alamatJudul"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:text="Alamat Lengkap Sesuai Tempat Tinggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_margin="5dp"
+            android:background="@drawable/button2"
+            android:id="@+id/etAlamat"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/kameraJudul"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:text="Silahkan Ambil FOTO KTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@drawable/tombolkamera"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ivAmbilGambar"
+            android:contentDescription="Ambil Foto Anda" />
+        <TextView
+            android:id="@+id/tvCaptcha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Masukan Kode Captcha Dibawah ini"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:background="#000"
+            android:id="@+id/batas"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:textStyle="normal|bold"/>
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="ambil foto" />
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:background="@drawable/tombolcaptcha"
+                android:id="@+id/btCaptcha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refresh" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/etJawaban"
+            android:hint="Masukan Jawaban Anda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:background="@color/colorPrimary"
+            android:textSize="25sp" />
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

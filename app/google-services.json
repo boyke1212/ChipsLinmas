@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "183471963943",
+    "firebase_url": "https://chips-linmas.firebaseio.com",
+    "project_id": "chips-linmas",
+    "storage_bucket": "chips-linmas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183471963943:android:82a228a7bafbe058",
+        "android_client_info": {
+          "package_name": "com.toelve.chipslinmas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183471963943-eo5tqsb6r0llvtnohl465nllruen1odp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.toelve.chipslinmas",
+            "certificate_hash": "735de1827c21031581b60f346cb3e422183b43b1"
+          }
+        },
+        {
+          "client_id": "183471963943-0as3pglf7cgioh998rarch6fqad5eom8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANZcZhSXUAdz1N5mi0LTc0l9f80fVDuPo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183471963943-0as3pglf7cgioh998rarch6fqad5eom8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

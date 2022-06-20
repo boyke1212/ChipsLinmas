@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context="com.toelve.chipslinmas.DetilBerita">
+    <ScrollView
+        android:padding="10dp"
+        android:id="@+id/isiHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tvJudul"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:background="#9b9292"
+                android:layout_marginTop="20dp"
+                android:text="ISI BERITA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/ivBerita"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"
+                android:layout_width="160dp"
+                android:layout_height="160dp" />
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/tvUsername"
+                android:layout_marginTop="2dp"
+                android:textColor="#000"
+                android:background="@drawable/backingan"
+                android:text="Nama Pegawai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/tvTanggal"
+                android:textColor="#000"
+                android:background="@drawable/backingan"
+                android:text="Konsultan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/tvJam"
+                android:textColor="#000"
+                android:background="@drawable/backingan"
+                android:text="Jenis Proyek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:textSize="20sp"
+                android:id="@+id/tvPerihal"
+                android:textColor="#000"
+                android:background="@drawable/backingan"
+                android:text="Lokasi Proyek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/tvAlamat"
+                android:textColor="#000"
+                android:background="@drawable/backingan"
+                android:text="Lokasi Proyek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/tvLaporan"
+                android:textColor="#000"
+                android:background="@drawable/backingan"
+                android:text="Lokasi Proyek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <fragment
+                android:layout_marginTop="10dp"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                tools:layout="@layout/abc_screen_simple" />
+            <Button
+                android:layout_below="@+id/isiHolder"
+                android:id="@+id/btClose"
+                android:text="CLOSE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

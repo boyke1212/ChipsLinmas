@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/activity_pre_usulan"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.toelve.chipslinmas.BeritaKejadian">
+<TextView
+    android:id="@+id/tvHead"
+    android:textColor="#000"
+    android:text="Berita Kejadian"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="normal|bold"
+    android:fontFamily="sans-serif"
+    android:typeface="serif"
+    android:lineSpacingExtra="12sp"
+    android:textSize="24sp"
+    android:textAlignment="center" />
+<TextView
+    android:id="@+id/pembatas1"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/tvHead"
+    android:background="#0f2cb7"
+    android:layout_width="match_parent"
+    android:layout_height="1dp" />
+<ListView
+    android:layout_below="@+id/pembatas1"
+    android:id="@+id/lvList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</ListView>
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    app:srcCompat="@android:drawable/ic_input_add"
+    android:layout_marginRight="21dp"
+    android:layout_marginBottom="19dp"
+    android:layout_marginEnd="21dp"
+    android:alpha="0.5"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+</RelativeLayout>

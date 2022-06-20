@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:background="@drawable/back2"
+android:layout_height="match_parent"
+tools:context="com.toelve.chipslinmas.Home">
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/ivlogo"
+        android:src="@drawable/logo2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/ivLinmas"
+        android:src="@drawable/linmas2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+<LinearLayout
+    android:padding="19dp"
+    android:background="#71445ab6"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginBottom="94dp">
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:background="#1b1a1a"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:text="Silahkan Pilih Menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="10dp"
+    android:text="Laporan Kejadian"
+    android:id="@+id/btLapor"
+    android:background="@drawable/button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:text="Berita Kejadian"
+        android:id="@+id/btLaporKecelakaan"
+        android:background="@drawable/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="10dp"
+        android:text="Logout"
+        android:id="@+id/btLogout"
+        android:background="@drawable/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+</RelativeLayout>

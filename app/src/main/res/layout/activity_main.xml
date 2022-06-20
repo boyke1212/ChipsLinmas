@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context="com.toelve.chipslinmas.MainActivity">
+
+
+    <LinearLayout
+        android:background="#7b000000"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ivHead"
+            android:layout_marginTop="58dp"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardMaxElevation="10dp"
+            card_view:cardBackgroundColor="#5391de"
+            card_view:cardCornerRadius="14dp"
+            card_view:cardElevation="55dp"
+            android:layout_below="@+id/ivlogo"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:padding="4dp"
+                android:id="@+id/listCardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/MainHolder"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo" />
+        </androidx.cardview.widget.CardView>
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/ivlogo"
+            android:src="@drawable/logo2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/ivLinmas"
+            android:src="@drawable/linmas2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <TextView
+            android:background="#fff"
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Silahkan Login Dahulu"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#01000d"
+            android:layout_above="@+id/MainHolder"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp" />" />
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/button"
+            android:hint="User Name"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/button"
+            android:hint="....................."
+            android:inputType="textPassword"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/btLogin"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/tombollogin"
+            android:text="Login" />
+</LinearLayout>
+        <LinearLayout
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:alpha="0.8"
+            android:background="@drawable/button2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/tvSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAFTAR"
+                android:textColor="#22048e" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
